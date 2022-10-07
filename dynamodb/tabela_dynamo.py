@@ -62,14 +62,14 @@ response = table.scan(FilterExpression=Attr('username').eq(username) & Attr('fir
 if len(response) == 0:
     print ('No items found')
     inserir()
-
+[
 
 response = table.scan(FilterExpression=Attr('username').eq(username) & Attr('first_name').eq(sobrenome)).get('Items',[])
 if len(response) == 0:
     print ('No items found')
 
 if len(response) > 0 :
-    print ('itens encontrados')
+    print ('itens encontrados')]
 
 dados = table.scan()
 
